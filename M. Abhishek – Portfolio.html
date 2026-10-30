@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>M. Abhishek | Data Analytics &amp; IT Graduate</title>
+<meta name="description" content="Portfolio of M. Abhishek, Information Technology graduate skilled in Python, SQL, Power BI and data analytics.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f6; --surface:#ffffff; --ink:#10243a; --muted:#52657a; --line:#d3dce6;
+  --accent:#0b7a75; --accent-ink:#ffffff; --amber:#e0a526;
+  --head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d1b2a; --surface:#14283d; --ink:#e8eef5; --muted:#9db0c4; --line:#27415c;
+    --accent:#4fd1c5; --accent-ink:#06211f; --amber:#f0b93a; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d1b2a; --surface:#14283d; --ink:#e8eef5; --muted:#9db0c4; --line:#27415c;
+  --accent:#4fd1c5; --accent-ink:#06211f; --amber:#f0b93a; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:9}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:56px}
+.brand{font:700 1.1rem var(--head);color:var(--ink);text-decoration:none}
+.links{display:flex;gap:1.1rem;overflow-x:auto;scrollbar-width:none}
+.links a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap}
+.links a:hover{color:var(--accent)}
+.hero{padding:4rem 0 3rem}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:2.5rem;align-items:center}
+.hero h1{font:800 clamp(2.4rem,6vw,4rem)/1.05 var(--head);margin:0 0 1rem;letter-spacing:-.02em}
+.role{font:500 1.25rem var(--head);color:var(--accent);margin:0 0 1rem}
+.lede{color:var(--muted);max-width:52ch;margin:0 0 1.75rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.7rem 1.25rem;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.25rem 1.25rem 1rem}
+.chart h2{font:600 .95rem var(--body);color:var(--muted);margin:0 0 .75rem}
+.chart svg{width:100%;height:auto;display:block}
+.bar{fill:var(--accent);transform-origin:bottom;transform-box:fill-box;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}
+.bar.hi{fill:var(--amber)}
+.bar:nth-child(2){animation-delay:.08s}.bar:nth-child(3){animation-delay:.16s}.bar:nth-child(4){animation-delay:.24s}
+.bar:nth-child(5){animation-delay:.32s}.bar:nth-child(6){animation-delay:.4s}.bar:nth-child(7){animation-delay:.48s}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.chart p{margin:.6rem 0 0;font-size:.85rem;color:var(--muted)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+section h2.t{font:700 1.8rem var(--head);margin:0 0 1.5rem;letter-spacing:-.01em}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.5rem;margin-bottom:1rem}
+.item .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem}
+.item h3{font:700 1.2rem var(--head);margin:0}
+.item .when{color:var(--muted);font-size:.95rem}
+.item .sub{color:var(--accent);font-weight:600;margin:.1rem 0 .6rem}
+.item ul{margin:.5rem 0 0;padding-left:1.15rem}
+.item li{margin:.35rem 0;max-width:75ch}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem}
+.tags span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.15rem .75rem;font-size:.9rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+.skills .item{margin:0}
+.skills h3{font-size:1.05rem}
+.skills p{margin:.4rem 0 0;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.two h3{font:700 1.2rem var(--head);margin:0 0 .75rem}
+.plain{list-style:none;padding:0;margin:0}
+.plain li{padding:.6rem 0;border-bottom:1px solid var(--line)}
+.plain li:last-child{border:0}
+.plain small{display:block;color:var(--muted)}
+.contact p{max-width:55ch;color:var(--muted)}
+footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media (max-width:760px){
+  .hero{padding-top:2.5rem}
+  .hero .wrap,.two{grid-template-columns:1fr}
+  .brand{display:none}
+}
+@media (prefers-reduced-motion:reduce){.bar{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">M. Abhishek</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Project</a>
+      <a href="#research">Research</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>M. Abhishek</h1>
+      <p class="role">Information Technology graduate, data analytics</p>
+      <p class="lede">I turn raw data into clear insights using Python, SQL, Excel and Power BI. I am looking for an entry-level IT or data role where I can keep learning and contribute from day one.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:mabhishek0503@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/m-abhishek-954043290" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/Abhi17105" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="chart" role="img" aria-label="Decorative bar chart showing an upward trend">
+      <h2>Spotting the trend</h2>
+      <svg viewBox="0 0 280 150" aria-hidden="true">
+        <line x1="0" y1="140" x2="280" y2="140" stroke="var(--line)" stroke-width="2"/>
+        <g>
+          <rect class="bar" x="8" y="90" width="30" height="50" rx="4"/>
+          <rect class="bar" x="48" y="75" width="30" height="65" rx="4"/>
+          <rect class="bar" x="88" y="95" width="30" height="45" rx="4"/>
+          <rect class="bar" x="128" y="60" width="30" height="80" rx="4"/>
+          <rect class="bar" x="168" y="45" width="30" height="95" rx="4"/>
+          <rect class="bar" x="208" y="30" width="30" height="110" rx="4"/>
+          <rect class="bar hi" x="248" y="12" width="26" height="128" rx="4"/>
+        </g>
+      </svg>
+      <p>Illustration only. Finding patterns like this is what I enjoy most.</p>
+    </div>
+  </div>
+</div>
+
+<section id="about"><div class="wrap">
+  <h2 class="t">About me</h2>
+  <p style="max-width:70ch">I hold a B.Tech in Information Technology and a diploma in Computer Engineering. Through academic projects and a data analytics internship, I have worked with Python, SQL and visualization tools to study customer behavior and predict trends. I am a clear communicator, a careful problem solver, and I enjoy picking up new technologies. I am based in Vikarabad, Telangana, India.</p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2 class="t">Experience</h2>
+  <article class="item">
+    <div class="top"><h3>Data Analytics Intern</h3><span class="when">Dec 2025 – Feb 2026</span></div>
+    <div class="sub">Infosys Springboard Internship 6.0 · Remote, Hyderabad</div>
+    <ul>
+      <li>Built a customer preference analysis model for the food industry that surfaced key consumption trends and supported better business decisions.</li>
+      <li>Used Python, MS Excel, SQL and visualization tools to analyze customer behavior and predict future trends.</li>
+      <li>Found recurring patterns in decision-making, seasonal demand and popular food items.</li>
+      <li>Presented insights and recommendations through dashboards and analytical reports for the internship project evaluation.</li>
+    </ul>
+    <div class="tags"><span>Python</span><span>SQL</span><span>Excel</span><span>Dashboards</span></div>
+  </article>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2 class="t">Project</h2>
+  <article class="item">
+    <div class="top"><h3>College Event Management System (CEMS)</h3><span class="when">Apr 2025</span></div>
+    <div class="sub">A platform for organizing college events</div>
+    <ul>
+      <li>Built a platform that streamlines event organization, scheduling and student participation.</li>
+      <li>Implemented modules for registration, scheduling, notifications and engagement tracking.</li>
+      <li>Reduced manual management effort through digital automation and better coordination.</li>
+      <li>Designed a scalable architecture to handle many events and users.</li>
+    </ul>
+    <div class="tags"><span>Python</span><span>SQL</span><span>Web development</span><span>System design</span></div>
+    <p style="margin:.9rem 0 0"><a href="https://github.com/Abhi17105" target="_blank" rel="noopener">See my work on GitHub</a></p>
+  </article>
+</div></section>
+
+<section id="research"><div class="wrap">
+  <h2 class="t">Publications</h2>
+  <article class="item">
+    <div class="top"><h3>Enhancing College Events with CEMS</h3><span class="when">Oct 2025</span></div>
+    <div class="sub">IEEE · WECON 2025 Proceedings, Punjab, India</div>
+    <p style="margin:0">A tech-driven approach to organization and engagement for college events. <a href="https://doi.org/10.1109/WECON65213.2025.11414598" target="_blank" rel="noopener">Read via DOI</a></p>
+  </article>
+  <article class="item">
+    <div class="top"><h3>Arduino-Based Automatic Irrigation System</h3><span class="when">Dec 2024</span></div>
+    <div class="sub">Springer · ICDSM-2024 Proceedings, Bhubaneswar, India</div>
+    <p style="margin:0">An automatic irrigation system for efficient water management in agriculture.</p>
+  </article>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2 class="t">Skills</h2>
+  <div class="skills">
+    <div class="item"><h3>Programming</h3><p>Python</p></div>
+    <div class="item"><h3>Databases</h3><p>SQL</p></div>
+    <div class="item"><h3>Analytics and BI</h3><p>Power BI, Microsoft Excel</p></div>
+    <div class="item"><h3>AI tools</h3><p>ChatGPT, Google Gemini, Microsoft Copilot, Claude</p></div>
+    <div class="item"><h3>Professional</h3><p>Technical writing, documentation, problem solving</p></div>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2 class="t">Education</h2>
+  <div class="item">
+    <ul class="plain">
+      <li><strong>B.Tech, Information Technology</strong> · Vardhaman College of Engineering, JNTUH<small>Nov 2023 – Apr 2026 · GPA 7.4/10</small></li>
+      <li><strong>Diploma, Computer Engineering</strong> · Sree Dattha Institute of Engineering and Science<small>Nov 2020 – Apr 2023 · GPA 7.1/10</small></li>
+      <li><strong>Tenth Class</strong> · Siddhartha School of Excellence<small>Mar 2020 · GPA 8.8/10</small></li>
+    </ul>
+  </div>
+  <div class="two" style="margin-top:2rem">
+    <div>
+      <h3>Certifications</h3>
+      <div class="item"><ul class="plain">
+        <li>AWS Academy Cloud Foundations<small>AWS Academy Graduate · Feb 2025</small></li>
+        <li>Python Essentials 1<small>Cisco Networking Academy · Nov 2025</small></li>
+        <li>Data Analytics Essentials<small>Cisco Networking Academy · Mar 2025</small></li>
+        <li>Infosys Springboard Internship 6.0<small>Apr 2026</small></li>
+      </ul></div>
+    </div>
+    <div>
+      <h3>Honors and awards</h3>
+      <div class="item"><ul class="plain">
+        <li>Agentblazer Champion, Level 1<small>Salesforce Agentforce · Jul 2025. Covered agent building, business impact analysis and use case identification.</small></li>
+      </ul></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2 class="t">Let’s talk</h2>
+  <p>I am open to entry-level IT and data analytics roles. Send me a message and I will reply as soon as I can.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:mabhishek0503@gmail.com">mabhishek0503@gmail.com</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/m-abhishek-954043290" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn ghost" href="https://github.com/Abhi17105" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 M. Abhishek. Vikarabad, Telangana, India.</div></footer>
+</body>
+</html>
